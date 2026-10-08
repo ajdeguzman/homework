@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
@@ -41,14 +41,16 @@ jobs:
             --output-dir _site \
             --ExecutePreprocessor.timeout=180
           cp index.html _site/index.html
+          cp lime-pothole-classification.html _site/lime-pothole-classification.html
           cp doc/notebooks/breast-cancer-analysis.ipynb _site/doc/notebooks/
+          cp doc/notebooks/lime_pothole_classification.ipynb _site/doc/notebooks/
           touch _site/.nojekyll
 
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -56,7 +58,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages
