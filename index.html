@@ -3,34 +3,111 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Breast Cancer Classification</title>
+  <title>Activities and Homework</title>
   <style>
     body {
       max-width: 760px;
-      margin: 72px auto;
+      margin: 36px auto;
       padding: 0 24px;
       color: #222;
-      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    h1 { line-height: 1.2; }
+    h2 { margin: 24px 0 8px; line-height: 1.2; }
+    h2:first-child { margin-top: 0; }
+    p { margin: 6px 0; }
+    .date { display: block; margin-top: -4px; color: #666; font-size: 14px; }
     a { color: #337ab7; }
+    .actions { display: flex; gap: 4px; }
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+    }
+    .icon-link:hover { background: #edf4fa; }
+    .icon-link:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+    .icon-link svg { width: 22px; height: 22px; }
   </style>
 </head>
 <body>
   <main>
+    <h2>Pothole Image Classification</h2>
+    <time class="date" datetime="2026-10-18">October 18, 2026</time>
+    <p>
+      Explainable AI (XAI) analysis of a convolutional neural network (CNN) trained to classify pothole images using LIME.
+    </p>
+    <div class="actions">
+      <a class="icon-link" href="lime-pothole-classification.html" aria-label="View Pothole Image Classification notebook tutorial" title="View notebook tutorial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="3" width="15" height="18" rx="2" />
+          <path d="M9 3v18M3 7h4M3 12h4M3 17h4M12 8h5M12 12h5" />
+        </svg>
+      </a>
+      <a class="icon-link" href="doc/notebooks/lime-pothole-classification.ipynb" download aria-label="Download Pothole Image Classification Jupyter notebook" title="Download Jupyter notebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4" />
+        </svg>
+      </a>
+    </div>
     <h2>Breast Cancer Classification</h2>
+    <time class="date" datetime="2026-10-04">October 4, 2026</time>
     <p>
       An analysis comparing logistic regression, decision tree, and random
       forest classifiers on the Wisconsin breast cancer dataset.
     </p>
-    <p><a href="breast-cancer-analysis.html">View the rendered tutorial</a></p>
-    <p><a href="doc/notebooks/breast-cancer-analysis.ipynb">Download the Jupyter notebook</a></p>
-    <h2>Pothole Image Classification</h2>
+    <div class="actions">
+      <a class="icon-link" href="breast-cancer-analysis.html" aria-label="View Breast Cancer Classification notebook tutorial" title="View notebook tutorial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="3" width="15" height="18" rx="2" />
+          <path d="M9 3v18M3 7h4M3 12h4M3 17h4M12 8h5M12 12h5" />
+        </svg>
+      </a>
+      <a class="icon-link" href="doc/notebooks/breast-cancer-analysis.ipynb" download aria-label="Download Breast Cancer Classification Jupyter notebook" title="Download Jupyter notebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4" />
+        </svg>
+      </a>
+    </div>
+    <h2>Practical SVM</h2>
+    <time class="date" datetime="2026-09-27">September 27, 2026</time>
     <p>
-      Explainable AI (XAI) analysis of a convolutional neural network (CNN) trained to classify pothole images using LIME.
+      A practical guide to support vector machines on the Wisconsin breast cancer
+      dataset, covering feature scaling, hyperparameter tuning, and model evaluation.
     </p>
-    <p><a href="lime-pothole-classification.html">View the rendered tutorial</a></p>
-    <p><a href="doc/notebooks/lime_pothole_classification.ipynb">Download the Jupyter notebook</a></p>
+    <div class="actions">
+      <a class="icon-link" href="practical-svm.html" aria-label="View Practical SVM notebook tutorial" title="View notebook tutorial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="3" width="15" height="18" rx="2" />
+          <path d="M9 3v18M3 7h4M3 12h4M3 17h4M12 8h5M12 12h5" />
+        </svg>
+      </a>
+      <a class="icon-link" href="doc/notebooks/practical-svm.ipynb" download aria-label="Download Practical SVM Jupyter notebook" title="Download Jupyter notebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4" />
+        </svg>
+      </a>
+    </div>
+    <h2>Climate–Dengue Relationship Study</h2>
+    <time class="date" datetime="2026-07">July 2026</time>
+    <p>
+      An analysis of associations between climate variables and weekly dengue cases,
+      covering seasonal patterns, lagged effects, regression modeling, and validation.
+    </p>
+    <div class="actions">
+      <a class="icon-link" href="climate-dengue-relationship.html" aria-label="View Climate–Dengue Relationship Study notebook" title="View notebook tutorial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="3" width="15" height="18" rx="2" />
+          <path d="M9 3v18M3 7h4M3 12h4M3 17h4M12 8h5M12 12h5" />
+        </svg>
+      </a>
+      <a class="icon-link" href="doc/notebooks/climate-dengue-relationship.ipynb" download aria-label="Download Climate–Dengue Relationship Study Jupyter notebook" title="Download Jupyter notebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4" />
+        </svg>
+      </a>
+    </div>
   </main>
 </body>
 </html>
