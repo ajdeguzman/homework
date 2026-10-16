@@ -42,8 +42,9 @@ jobs:
             --ExecutePreprocessor.timeout=180
           cp index.html _site/index.html
           cp lime-pothole-classification.html _site/lime-pothole-classification.html
-          cp doc/notebooks/breast-cancer-analysis.ipynb _site/doc/notebooks/
-          cp doc/notebooks/lime_pothole_classification.ipynb _site/doc/notebooks/
+          cp practical-svm.html _site/practical-svm.html
+          cp climate-dengue-relationship.html _site/climate-dengue-relationship.html
+          cp doc/notebooks/*.ipynb _site/doc/notebooks/
           touch _site/.nojekyll
 
       - name: Configure Pages
